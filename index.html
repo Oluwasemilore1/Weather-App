@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="weather-side">
+            <div class="weather-gradient"></div>
+
+            <div class="date-container">
+                <h2 id="day-dayname">Sunday</h2>
+                <span id="date-name">30 Mar 2020</span>
+                <i class="location-icon" data-feather="map-pin"></i>
+                <span id="location"></span>
+            </div>
+            <div class="search">
+                <input type="text" id="search-input" placeholder="Enter City Name">
+                <button id="Search">Search</button>
+            </div>
+            <div class="weather-container">
+                <i class="weather-icon" data-feather="sun"></i>
+                <h1 id="weather-temp"> </h1>
+                <h3 id="weather-desc"></h3>
+            </div>
+            
+        </div>
+    </div>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+        feather.replace();
+    </script>
+</body>
+</html>
