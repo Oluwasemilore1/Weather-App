@@ -3,21 +3,32 @@ const searchBtn = document.getElementById('Search')
 //Event Listeners
 searchBtn.addEventListener('click', getWeatherDetails);
 
-function getWeatherDetails() {
+function getWeatherDetails(e) {
+    e.preventDefault()
     let searchInputTxt = document.getElementById('search-input').value;
     let temperature = document.getElementById('weather-temp');
-    let location = document.getElementById('location')
-    let description = document.getElementById('weather-desc')
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchInputTxt}&appid=8e65f3e946066c4560cf1eb26a055165`)
+    let city = document.getElementById('location')
+    let ions = document.getElementById('weather-icon')
+    let dayday = document.getElementById('date-name')
+    let cweather = document.getElementById('weather-desc')
+    fetch(`https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${searchInputTxt}?unitGroup=metric&key=G3W2C9R5DN23VPB2HHAG4XEHJ&contentType=json`)
     .then(response => response.json())
     .then(getWeatherDetails => {
-        let temp = getWeatherDetails.main.temp;
-        let description = getWeatherDetails.weather.description;
-        // let location = getWeatherDetails.name;
-        console.log(temp);
+        let temp = getWeatherDetails.days[0].temp;
+        let date = getWeatherDetails.days[0].datetime;
+        let location = getWeatherDetails.resolvedAddress;
+        let cwea = getWeatherDetails.days[0].description;
+        let icons = getWeatherDetails.days[0].icon;
         temperature.append(temp)
-        description.append()
-        // location.append(location)
+        cweather.append(cwea)
+        dayday.append(date)
+        city.append(location)
+        ions.append(icons)
+
+        if (icon = partly-cloudy-day) {
+            
+        }
+
     })
     
 }
