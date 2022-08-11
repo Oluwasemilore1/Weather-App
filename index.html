@@ -15,7 +15,7 @@
             <div class="weather-gradient"></div>
 
             <div class="date-container">
-                <h2 id="day-dayname">Thursday</h2>
+                <h2 id="day-dayname"></h2>
                 <span id="date-name"></span>
                 <i class="location-icon" data-feather="map-pin"></i>
                 <span id="location"></span>
@@ -36,6 +36,12 @@
     <script src="https://unpkg.com/feather-icons"></script>
     <script>
         feather.replace();
+
+        const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+        const d = new Date();
+        let day = weekday[d.getDay()];
+        document.getElementById("day-dayname").innerHTML = day;
     </script>
 </body>
 </html>

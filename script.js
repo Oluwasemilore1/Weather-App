@@ -4,7 +4,9 @@ let city = document.getElementById('location')
 let ions = document.getElementById('weather-icon')
 let dayday = document.getElementById('date-name')
 let cweather = document.getElementById('weather-desc')
+let dayname = document.getElementById('day-dayname')
 
+getDays();
 
 //Event Listeners
 searchBtn.addEventListener('click', getWeatherDetails);
@@ -28,15 +30,41 @@ function getWeatherDetails() {
 
         city.textContent = getWeatherDetails.resolvedAddress
         ions.textContent = getWeatherDetails.days[0].icon
-        temperature.textContent = `${getWeatherDetails.days[0].temp}°C`
+        temperature.textContent = `${getWeatherDetails.days[0].temp}`
         dayday.textContent = getWeatherDetails.days[0].datetime
         cweather.textContent = getWeatherDetails.days[0].description
+        
 
-
+        // if (ions.textContent == 'rain') {
+        // //    return document.body.style.backgroundImage 
+        //     console.log('good');
+        // } 
+        // if (ions.textContent == 'rain') {
+        // //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
+        //         // return `<img src"${./Images/cloudybg.avif}">`
+        //     console.log('good');
+        // } 
+        // if (ions.textContent == 'partly-cloudy-day') {
+        // //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
+        //         // return `<img src"${./Images/cloudybg.avif}">`
+        //     console.log('good');
+        // } 
+        // if (ions.textContent == '') {
+        // //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
+        //         // return `<img src"${./Images/cloudybg.avif}">`
+        //     console.log('good');
+        // } 
+        // else {
+        //     console.log('not good');
+        // }
     })
-        searchInputTxt.value = '';   
+        // searchInputTxt.value = '';   
 }
 
-function displayBG(icon) {
-
+function getDays() {
+    const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const d = new Date();
+    let day = weekday[d.getDay()];
+    document.getElementById("day-dayname").innerHTML = day;
 }
+
