@@ -5,6 +5,7 @@ let ions = document.getElementById('weather-icon')
 let dayday = document.getElementById('date-name')
 let cweather = document.getElementById('weather-desc')
 let dayname = document.getElementById('day-dayname')
+let wrapper = document.getElementById('wrapper')
 
 getDays();
 
@@ -37,25 +38,29 @@ function getWeatherDetails() {
 
         if (ions.textContent == 'rain') {
         //    return document.body.style.backgroundImage 
-            console.log('good');
+            // console.log('good');
+            wrapper.style.backgroundImage = "url('https://images.unsplash.com/photo-1587749429368-ed1fe6fd6d17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZGFyayUyMGZvcmVzdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60')"
+            // wrapper.style.backgroundColor = 'green'
         } 
-        if (ions.textContent == 'rain') {
-        //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
-                // return `<img src"${./Images/cloudybg.avif}">`
-            console.log('good');
-        } 
-        if (ions.textContent == 'partly-cloudy-day') {
-        //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
-                // return `<img src"${./Images/cloudybg.avif}">`
-            console.log('good');
-        } 
-        if (ions.textContent == 'sunny') {
-        //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
-                // return `<img src"${./Images/cloudybg.avif}">`
-            console.log('good');
-        } 
+        // if (ions.textContent == 'rain') {
+        // //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
+        //         // return `<img src"${./Images/cloudybg.avif}">`
+        //     console.log('good');
+        // } 
+        // if (ions.textContent == 'partly-cloudy-day') {
+        // //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
+        //         // return `<img src"${./Images/cloudybg.avif}">`
+        //     // console.log('good');
+        //     // wrapper.style.backgroundColor = 'yellow'
+        // } 
+        // if (ions.textContent == 'sunny') {
+        // //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
+        //         // return `<img src"${./Images/cloudybg.avif}">`
+        //     console.log('good');
+        // } 
         else {
-            console.log('not good');
+            // console.log('not good');
+            wrapper.style.backgroundImage = "url('https://images.unsplash.com/photo-1469122312224-c5846569feb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8c3Vubnl8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60')"
         }
     })
         // searchInputTxt.value = '';   

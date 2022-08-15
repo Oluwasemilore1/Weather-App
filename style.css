@@ -7,9 +7,11 @@
 *{
     box-sizing: border-box;
     line-height: 1.25em;
+    margin: 0;
+    padding: 0;
 }
 
-body{
+#wrapper{
     margin: 0;
     width: 100%;
     height: 100vh;
@@ -17,20 +19,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url("https://images.unsplash.com/photo-1623763590205-4fd9bbbf9251?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"); */
+    background-image: url("https://images.unsplash.com/photo-1623763590205-4fd9bbbf9251?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGJ1c2h8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
     background-position: center;
     /* background-image: url("https://images.unsplash.com/photo-1587749429368-ed1fe6fd6d17?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8ZGFyayUyMGZvcmVzdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60"); */
     background-repeat: no-repeat;
     background-size: cover;
-    animation-name: body;
+    /* animation-name: body;
     animation-timing-function: ease-in-out;
     animation-delay: 4s;
     animation-duration: 10s;
     animation-fill-mode: both;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite; */
 }
 
-@keyframes body {
+/* @keyframes body {
     0%{
         background-image: url(https://images.unsplash.com/photo-1542221777328-f6a98e2eb4fe?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8cmFpbmluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
     }
@@ -40,7 +42,7 @@ body{
     100%{
         background-image: url(./Images/cloudybg.avif);
     }
-}
+} */
 
 
 
