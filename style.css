@@ -122,6 +122,9 @@ body{
     height: 60px;
     width: auto;
     color: rgb(238, 215, 5);
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 
 #weather-temp{
@@ -135,7 +138,7 @@ body{
 }
 
 .search{
-    margin-top: 10rem;
+    margin-top: 12rem;
     position: absolute;
     left: 20px;
 }

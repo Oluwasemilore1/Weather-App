@@ -35,28 +35,28 @@ function getWeatherDetails() {
         cweather.textContent = getWeatherDetails.days[0].description
         
 
-        // if (ions.textContent == 'rain') {
-        // //    return document.body.style.backgroundImage 
-        //     console.log('good');
-        // } 
-        // if (ions.textContent == 'rain') {
-        // //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
-        //         // return `<img src"${./Images/cloudybg.avif}">`
-        //     console.log('good');
-        // } 
-        // if (ions.textContent == 'partly-cloudy-day') {
-        // //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
-        //         // return `<img src"${./Images/cloudybg.avif}">`
-        //     console.log('good');
-        // } 
-        // if (ions.textContent == '') {
-        // //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
-        //         // return `<img src"${./Images/cloudybg.avif}">`
-        //     console.log('good');
-        // } 
-        // else {
-        //     console.log('not good');
-        // }
+        if (ions.textContent == 'rain') {
+        //    return document.body.style.backgroundImage 
+            console.log('good');
+        } 
+        if (ions.textContent == 'rain') {
+        //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
+                // return `<img src"${./Images/cloudybg.avif}">`
+            console.log('good');
+        } 
+        if (ions.textContent == 'partly-cloudy-day') {
+        //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
+                // return `<img src"${./Images/cloudybg.avif}">`
+            console.log('good');
+        } 
+        if (ions.textContent == 'sunny') {
+        //    return document.body.style.backgroundImage = url('./Images/cloudybg.avif')
+                // return `<img src"${./Images/cloudybg.avif}">`
+            console.log('good');
+        } 
+        else {
+            console.log('not good');
+        }
     })
         // searchInputTxt.value = '';   
 }
@@ -67,4 +67,6 @@ function getDays() {
     let day = weekday[d.getDay()];
     document.getElementById("day-dayname").innerHTML = day;
 }
+
+
 
